@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #37474f;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000000;
+  animation: animateBackground 15s linear infinite alternate;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.content {
+  text-align: center;
+  background-color: #000000; 
+  padding: 20px;
+  border-radius: 20px; 
+  max-width: 900px; 
+  margin: 20px auto; 
+  box-shadow: 0 4px 8px #cc6699; 
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 20px 0;
+  color: #22D4FD; 
+  letter-spacing: 1px; 
+}
+
+h2, h3, .special-text {
+  font-family: 'Amatic SC', cursive;
+  font-size: 28px;
+  margin: 15px 0;
+  color: #757575; 
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between; 
+  gap: 20px; 
+  max-width: 900px; 
+  margin-top: 20px;
+}
+
+.drop-area,
+.container2 {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  text-align: center;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 30px;
+  transition: transform 0.2s ease-in-out; 
+  background-color: #22D4FD; 
+  border-radius: 15px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.container2 {
+  background-color: #000000; 
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #22D4FD;
+}
+
+.drop-area:hover,
+.container2:hover {
+  transform: scale(1.05); 
+}
+
+
+.drop-area {
+  border: 2px dashed #000000; 
+}
+
+
+a {
+  font-family: 'Poppins', sans-serif;
+  color: #cc6699; 
+  text-decoration: none; 
+  transition: color 0.3s ease-in-out; 
+}
+
+a:hover {
+  color: #ff99cc; 
+  text-decoration: underline; 
+}
+
+button {
+  background-color: #e6b3cc; /* Fondo del botón en tono lila claro */
+  border: none; /* Sin borde */
+  color: #22D4FD; /* Texto blanco */
+  padding: 1px 24px; /* Espaciado interno */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  margin: 1px 10px; /* Márgenes */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  border-radius: 12px; /* Bordes redondeados */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transiciones */
+  display: inline-block; /* Mostrar como bloque en línea */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+button:hover {
+  background-color: #d98cb3; /* Fondo del botón al pasar el mouse */
+  transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Estilo para formularios */
+input[type="text"], input[type="email"], textarea {
+  width: 100%; /* Ancho completo */
+  padding: 12px 20px; /* Espaciado interno */
+  margin: 8px 0; /* Márgenes */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluir relleno y borde en el tamaño total */
+  background-color: #f9f2f4; /* Fondo lila claro */
+  color: #4d004d; /* Color de texto */
+  font-family: 'Poppins', sans-serif; /* Heredar la fuente */
+}
+
+input[type="file"] {
+  width: 100%; /* Ancho completo */
+  padding: 12px; /* Espaciado interno */
+  margin: 8px 0; /* Márgenes */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  background-color: #f3e5f5; /* Fondo lila claro */
+  color: #4d004d; /* Color de texto */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+/* Estilo del botón de enviar */
+input[type="submit"] {
+  background-color: #cc6699; /* Fondo del botón de enviar */
+  color: white; /* Texto blanco */
+  padding: 14px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transiciones */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+input[type="submit"]:hover {
+  background-color: #b35986; /* Fondo del botón al pasar el mouse */
+  transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Estilo base para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px; /* Ajuste del ancho máximo del formulario */
+  margin: 20px auto; /* Centrado del formulario */
+}
+
+/* Adaptaciones para dispositivos móviles */
+@media (max-width: 768px) {
+  .content {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .container {
+    flex-direction: column; /* Cambiar a una columna en pantallas más pequeñas */
+    gap: 10px; /* Espacio entre los contenedores en pantallas más pequeñas */
+  }
+
+  .drop-area,
+  .container2 {
+    width: 90%; /* Reducir el ancho en pantallas más pequeñas */
+    max-width: none; /* Restablecer el ancho máximo */
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+}
+
+/* Estilo del botón de archivo */
+input[type="file"] {
+  width: calc(100% - 16px); /* Ancho completo menos el espaciado */
+  padding: 20px; /* Mayor espaciado interno */
+  margin: 8px; /* Márgenes para ajustar el espaciado externo */
+  border: 2px solid #cc6699; /* Borde rosa más grueso */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f3e5f5; /* Fondo lila claro */
+  color: #4d004d; /* Color de texto */
+  font-size: 18px; /* Tamaño de la fuente más grande */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  display: block; /* Mostrar como bloque para abarcar todo el ancho */
+  box-sizing: border-box; /* Incluir relleno y borde en el tamaño total */
+}
+
+/* Estilo para el contenedor de input file */
+.drop-area {
+  padding: 30px; /* Espaciado adicional para el área de arrastre */
+  border: 2px dashed #cc6699; /* Borde rosa */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center;
+  background-color: #000000; /* Fondo lila claro */
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transiciones */
+  color: #4d004d; /* Color del texto */
+}
+
+.drop-area:hover {
+  background-color: #f3e5f5; /* Fondo lila claro más oscuro */
+  border-color: #b35986; /* Color del borde al pasar el mouse */
+}
+
+

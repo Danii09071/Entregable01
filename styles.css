@@ -1,0 +1,331 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #cc6699;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #22D4FD;
+    text-align: center;
+}
+
+.drop-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    height: 200px;
+    border: 2px dashed #22D4FD;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 10%;
+}
+
+.file-input {
+    width: 100%;
+    height: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.drop-area svg {
+    width: 50px;
+    height: 50px;
+    fill: #000000;
+}
+
+.drop-area p {
+    font-size: 18px;
+    color: #cc6699;
+    margin-top: 20px;
+}
+
+.container2 {
+    margin-top: 20px;
+}
+
+.archivos_subidos {
+    max-height: 100%;
+    margin-bottom: 10px;
+    padding: 1px;
+    border: 1px solid #22D4FD;
+    border-radius: 10px;
+    background-color: #000000;
+    float:inline-start;
+}
+
+.btn_delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn_delete svg {
+    fill: #0730c5;
+}
+
+.pila{
+    max-height: 200px;
+}
+
+.link-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link-container button {
+    background-color: #0730c5;
+    color: white;
+    border: 1px solid #22D4FD;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.link-container button:hover {
+    background-color: #cc6699;
+}
+
+.credits {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #cc6699;
+}
+
+.beta {
+    font-size: 0.6em;
+    background-color: #0730c5;
+    color: #cc6699;
+    padding: 3px 7px;
+    border-radius: 5px;
+    vertical-align: super;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .drop-area {
+        height: 150px;
+        font-size: 16px;
+    }
+
+    .archivos_subidos {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .archivos_subidos a {
+        font-size: 14px;
+    }
+
+    .link-container button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .drop-area {
+        height: 120px;
+        font-size: 14px;
+    }
+
+    .archivos_subidos {
+        padding: 5px;
+    }
+
+    .archivos_subidos a {
+        font-size: 12px;
+    }
+
+    .link-container button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+
+.drop-area {
+    padding: 30px;
+    border: 2px dashed #22D4FD;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Amatic SC', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    position: relative;
+}
+
+.drop-area.hover {
+    background-color: #f3e5f5;
+    border-color: #b35986;
+}
+
+.drop-area p {
+    margin: 0;
+}
+
+.drop-area input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+#progressWrapper {
+    margin-top: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #22D4FD;
+    border-radius: 4px;
+}
+
+#progressText {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#progressWrapper {
+    margin-top: 10px;
+    display: none;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #22D4FD;
+    border-radius: 4px;
+}
+
+#progressText {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.drop-area {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #22D4FD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.drop-area.dragging {
+    border-color: #ff5733;
+    background-color: #f5f5f5;
+}
+
+.drop-area svg {
+    width: 80px;
+    height: 80px;
+}
+
+.drop-area p {
+    margin-top: 10px;
+}
+
+.drop-area.dragging label {
+    display: none; 
+}
+
+.drop-area.dragging .drop-message {
+    display: block; 
+}
+
+.drop-message {
+    display: none;
+    font-size: 20px;
+    color: #ff5733;
+}
+
+.drop-message {
+    display: none;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.dragging {
+    border-color: #ff5733;
+}

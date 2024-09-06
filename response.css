@@ -1,0 +1,19 @@
+/* Estilo base para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: auto; /* Centra el formulario */
+}
+
+/* Estilo para inputs */
+input[type="file"] {
+    margin-bottom: 20px; /* Espacio entre los campos */
+}
+
+/* Adaptabilidad para pantallas pequeñas */
+@media (max-width: 600px) {
+    form {
+        padding: 10px; /* Espacio interno del formulario */
+    }
+}
